@@ -1,0 +1,22 @@
+{
+  "name": "@window-explorer/backend",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "bun run --watch src/index.ts",
+    "start": "bun run src/index.ts",
+    "db:generate": "bunx prisma generate",
+    "db:migrate": "bunx prisma migrate dev",
+    "db:seed": "bun run src/infrastructure/database/seed.ts"
+  },
+  "dependencies": {
+    "@elysiajs/cors": "^1.1.1",
+    "@elysiajs/swagger": "^1.1.6",
+    "@prisma/client": "^5.22.0",
+    "elysia": "^1.1.25"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "prisma": "^5.22.0"
+  }
+}

@@ -1,0 +1,35 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Node {
+  id        String   @id @default(uuid())
+  name      String
+  type      NodeType
+  parentId  String?
+  path      String
+  depth     Int      @default(0)
+  sortOrder Int      @default(0)
+  content   String?  // base64 encoded file content
+  mimeType  String?  // e.g. "image/png", "application/pdf"
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  parent   Node?  @relation("NodeChildren", fields: [parentId], references: [id], onDelete: Cascade)
+  children Node[] @relation("NodeChildren")
+
+  @@index([parentId])
+  @@index([path])
+  @@index([type])
+  @@map("nodes")
+}
+
+enum NodeType {
+  FOLDER
+  FILE
+}
