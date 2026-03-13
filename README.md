@@ -1,4 +1,4 @@
-# 🗂️ Window Explorer
+# Window Explorer
 
 Sebuah aplikasi web **File Explorer** berbasis browser yang terinspirasi dari tampilan **Windows 11 File Explorer**. Dibangun dengan arsitektur monorepo menggunakan Bun, Vue 3, Elysia, dan PostgreSQL.
 
@@ -6,21 +6,21 @@ Sebuah aplikasi web **File Explorer** berbasis browser yang terinspirasi dari ta
 
 ---
 
-## ✨ Fitur
+## Fitur
 
-- 📁 **Folder Tree** — navigasi hierarki folder di sidebar kiri
-- 📋 **List View** — tampilan isi folder dalam format list dengan kolom Name & Type
-- 🔍 **Search** — pencarian file/folder secara real-time
-- ➕ **New Folder / New File** — buat folder atau file baru langsung dari browser
-- ⬆️ **Upload File** — upload file (gambar, PDF, teks) dari komputer
-- 👁️ **Preview** — preview gambar, PDF, dan file teks
-- ✏️ **Rename** — ganti nama file/folder via klik kanan
-- 🗑️ **Delete** — hapus file/folder via klik kanan
-- 🎨 **Windows 11 UI** — tampilan mirip Windows 11 File Explorer
+- **Folder Tree** — navigasi hierarki folder di sidebar kiri
+- **List View** — tampilan isi folder dalam format list dengan kolom Name & Type
+- **Search** — pencarian file/folder secara real-time
+- **New Folder / New File** — buat folder atau file baru langsung dari browser
+- **Upload File** — upload file (gambar, PDF, teks) dari komputer
+- **Preview** — preview gambar, PDF, dan file teks
+- **Rename** — ganti nama file/folder via klik kanan
+- **Delete** — hapus file/folder via klik kanan
+- **Windows 11 UI** — tampilan mirip Windows 11 File Explorer
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Layer | Teknologi |
 |---|---|
@@ -32,7 +32,7 @@ Sebuah aplikasi web **File Explorer** berbasis browser yang terinspirasi dari ta
 
 ---
 
-## ⚙️ Prasyarat
+## Prasyarat
 
 Pastikan sudah terinstall:
 
@@ -41,7 +41,7 @@ Pastikan sudah terinstall:
 
 ---
 
-## 🚀 Setup Awal (Fresh Install)
+## Setup Awal (Fresh Install)
 
 ### 1. Clone repository
 
@@ -117,7 +117,7 @@ Aplikasi akan berjalan di:
 
 ---
 
-## 📁 Struktur Proyek
+## Struktur Proyek
 
 ```
 window-explorer/
@@ -150,7 +150,7 @@ window-explorer/
 
 ---
 
-## 🧪 Menjalankan Tests
+## Menjalankan Tests
 
 ### Unit test (Vitest)
 
@@ -169,7 +169,7 @@ bunx playwright test
 
 ---
 
-## 📜 Scripts Tersedia
+## Scripts Tersedia
 
 ### Root
 
@@ -198,7 +198,7 @@ bunx playwright test
 
 ---
 
-## 🔌 API Endpoints
+## API Endpoints
 
 Base URL: `http://localhost:3000/api/v1`
 
@@ -216,7 +216,7 @@ Dokumentasi lengkap tersedia di `/swagger` saat server berjalan.
 
 ---
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Error: `DATABASE_URL` not found
 Pastikan file `.env` sudah dibuat di `packages/backend/` (copy dari `.env.example`).
@@ -231,6 +231,6 @@ Ubah `PORT` di `.env` backend, atau hentikan proses yang menggunakan port 3000/5
 
 ---
 
-## 📄 Lisensi
+## Lisensi
 
 MIT
