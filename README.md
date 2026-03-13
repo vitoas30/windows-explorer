@@ -214,22 +214,6 @@ Base URL: `http://localhost:3000/api/v1`
 
 Dokumentasi lengkap tersedia di `/swagger` saat server berjalan.
 
----
-
-## Troubleshooting
-
-### Error: `DATABASE_URL` not found
-Pastikan file `.env` sudah dibuat di `packages/backend/` (copy dari `.env.example`).
-
-### Error: `Cannot connect to database`
-- Pastikan PostgreSQL berjalan
-- Cek username, password, dan nama database di `.env`
-- Pastikan database sudah dibuat (`CREATE DATABASE window_explorer`)
-
-### Error port sudah dipakai
-Ubah `PORT` di `.env` backend, atau hentikan proses yang menggunakan port 3000/5173.
-
----
 
 ## Lisensi
 
